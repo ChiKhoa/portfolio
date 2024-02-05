@@ -1,0 +1,17 @@
+{
+  "eng": "English",
+  "vie": "Vietnamese",
+  "project_type": "Collaboration project",
+  "vd_demo": "Video demo",
+  "deployment": "This project has no deployment.",
+  "source": "Source code on Github:",
+  "view_code": "View code",
+  "collab": "Collaboration with",
+  "wid": "What i did",
+  "mdetails": "More details",
+  "info": "Information",
+  "information_l1": "This project designs a website used by customers purchasing products such as drinks.",
+  "information_l2": "In this project, I design and code the UI, handle tasks and code logic performed on the client.",
+  "information_l3": "It is programmed in Java language, the html source code is in the .jsp file.",
+  "information_l4": "All the rest on the backend is handled by"
+}

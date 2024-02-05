@@ -14,9 +14,6 @@ const SBMusicPage = () => {
       <Tech />
       <MoreDetails />
       <Todos />
-      <div className="text-highlight">
-        Latest updated: {projectData.updated_at}.
-      </div>
     </>
   );
 };

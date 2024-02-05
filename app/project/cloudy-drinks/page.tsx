@@ -1,3 +1,5 @@
+"use client";
+
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
 import { TopHeading } from "../components/top-heading";
@@ -6,14 +8,50 @@ import { Overview } from "./components/overview";
 
 import { projectData } from "@/data/dataCloudyDrinks";
 
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
+import "@/lib/i18n/cloudy-drinks/i18n";
+import { useState } from "react";
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 const CloudyDrinksPage = () => {
+  const [language, setLanguage] = useState<string>("");
+
+  const { t } = useTranslation("translation");
+  const changeLanguage = (value: string) => {
+    i18n.changeLanguage(value);
+
+    setLanguage(value);
+  };
+
   return (
-    <div>
-      <TopHeading type={projectData.type} title={projectData.title} />
+    <>
+      <div className="flex justify-end">
+        <Select
+          onValueChange={(value) => changeLanguage(value)}
+          defaultValue="eng"
+        >
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Theme" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="eng">{t("eng")}</SelectItem>
+            <SelectItem value="vie">{t("vie")}</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+      <TopHeading type={t("project_type")} title={projectData.title} />
       <Overview />
       <section className="flex flex-col gap-y-2 mb-10">
         <h3 className="text-highlight underline text-xl font-medium">
-          What i did
+          {t("wid")}
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 px-5 sm:px-0">
           <TechItem title="HTML5">
@@ -32,32 +70,20 @@ const CloudyDrinksPage = () => {
       </section>
       <section className="flex flex-col gap-y-5 mb-10">
         <h3 className="text-highlight underline text-xl font-medium">
-          More details
+          {t("mdetails")}
         </h3>
         <div>
-          <h5 className="text-highlight mb-1">Information</h5>
+          <h5 className="text-highlight mb-1">{t("info")}</h5>
+          <p>{t("information_l1")}</p>
+          <p>{t("information_l2")}</p>
+          <p>{t("information_l3")}</p>
+
           <p>
-            This project designs a website used by customers purchasing products
-            such as drinks.
-          </p>
-          <p>
-            In this project, I design and code the UI, handle tasks and code
-            logic performed on the client.
-          </p>
-          <p>
-            It is programmed in Java language, the <code>html</code> source code
-            is in the <code>.jsp</code> file.
-          </p>
-          <p>
-            All the rest on the backend is handled by{" "}
-            <strong>Nguyễn Tiến Dũng</strong>.
+            {t("information_l4")} <strong>Nguyễn Tiến Dũng</strong>.
           </p>
         </div>
       </section>
-      <div className="text-highlight">
-        Latest updated: Friday, February 3, 2024.
-      </div>
-    </div>
+    </>
   );
 };
 

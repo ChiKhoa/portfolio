@@ -1,0 +1,17 @@
+{
+  "eng": "Tiếng Anh",
+  "vie": "Tiếng Việt",
+  "project_type": "Dự án nhóm",
+  "vd_demo": "Video sản phẩm",
+  "deployment": "Dự án này không được triển khai trên trình duyệt.",
+  "source": "Mã nguồn trên Github:",
+  "view_code": "Xem trên Github",
+  "collab": "Dự án hợp tác với",
+  "wid": "Trong dự án có",
+  "mdetails": "Chi tiết hơn",
+  "info": "Thông tin dự án",
+  "information_l1": "Dự án thiết kế website dành cho khách hàng là người mua các sản phẩm đồ uống trực tuyến.",
+  "information_l2": "Trong dự án này, mình đảm nhận thiết kế và lập trình giao diện, xử lý một vài tác vụ và logic trên phía máy khách (client).",
+  "information_l3": "Back-end được lập trình bằng Java, mã nguồn giao diện (html) nằm trong các file .jsp.",
+  "information_l4": "Những phần còn lại liên quan đến back-end được đảm nhiệm bởi"
+}
