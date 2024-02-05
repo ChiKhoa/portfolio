@@ -41,10 +41,7 @@ export const Overview = () => {
             <div className="flex items-center gap-x-2">
               <FaGithub className="w-7 h-7" /> Source code on Github:
             </div>
-            <Link
-              href="https://github.com/cowd90/CloudyDrinksWeb"
-              target="_blank"
-            >
+            <Link href={projectData.source} target="_blank">
               <Button>View code</Button>
             </Link>
           </div>

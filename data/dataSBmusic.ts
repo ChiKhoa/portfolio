@@ -11,6 +11,10 @@ export const projectData: Project = {
 
 export const images: Image[] = [
   {
+    title: "Home page - Not logged",
+    path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2FHome%20-%20Not%20logged.png?alt=media&token=b6eda0a4-b5fc-4e6b-8f1f-952cc6c350d5",
+  },
+  {
     title: "Home page - Logged",
     path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2Fhome.png?alt=media&token=fa09a610-ce06-4336-b668-30ba6fb43d36",
   },
@@ -25,6 +29,18 @@ export const images: Image[] = [
   {
     title: "Upload page",
     path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2FUpload.png?alt=media&token=0557e98c-8eb6-4435-a3df-528af018b920",
+  },
+  {
+    title: "Collection page",
+    path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2FCollection.png?alt=media&token=e7210d06-176a-4b12-a78b-f5d936ef5ff5",
+  },
+  {
+    title: "Create collection",
+    path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2FCreate%20Collection.png?alt=media&token=38a4d03d-79b7-4002-bd2c-fb8715b79f22",
+  },
+  {
+    title: "Add to collection",
+    path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2FAdd%20to%20Collection.png?alt=media&token=d461adf8-03f2-4db5-8029-372df02e4cfd",
   },
 ];
 

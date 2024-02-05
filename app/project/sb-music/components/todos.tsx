@@ -13,7 +13,7 @@ export const Todos = () => {
             key={index}
             title={todo.title}
             isDone={todo.status === "Completed"}
-            dateDone={todo.completed_at}
+            dateDone={`(${todo.status})`}
           />
         ))}
       </div>
