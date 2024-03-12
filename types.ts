@@ -8,7 +8,7 @@ export interface Project {
   updated_at: string;
 }
 
-export interface Image {
+export interface MyImage {
   title: string;
   path: string;
 }

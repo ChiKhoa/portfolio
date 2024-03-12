@@ -6,8 +6,8 @@ interface SectionProps {
 export const Section = ({ children, title }: SectionProps) => {
   return (
     <section className="my-24">
-      <p className="text-highlight underline text-lg mb-8">{title}</p>
-      <div className="flex flex-col gap-y-4">{children}</div>
+      <p className="text-highlight underline text-lg mb-6">{title}</p>
+      <div className="flex flex-col gap-y-2">{children}</div>
     </section>
   );
 };

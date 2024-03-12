@@ -1,7 +1,7 @@
-import { Image, Project, Todo } from "@/types";
+import { Project } from "@/types";
 
 export const projectData: Project = {
-  title: "CloudyDrinks",
+  title: "Cloudy Drinks",
   type: "Collaboration project",
   source: "https://github.com/cowd90/CloudyDrinksWeb",
   status: "This project is has been done.",

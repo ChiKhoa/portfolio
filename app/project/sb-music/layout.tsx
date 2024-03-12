@@ -1,6 +1,6 @@
 export async function generateMetadata() {
   return {
-    title: "SBmusic",
+    title: "SBmusic | Project",
   };
 }
 

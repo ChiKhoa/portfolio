@@ -1,4 +1,4 @@
-import { Image, Project, Todo } from "@/types";
+import { MyImage, Project, Todo } from "@/types";
 
 export const projectData: Project = {
   title: "SBmusic",
@@ -9,7 +9,7 @@ export const projectData: Project = {
   updated_at: "Friday, February 2, 2024",
 };
 
-export const images: Image[] = [
+export const images: MyImage[] = [
   {
     title: "Home page - Not logged",
     path: "https://firebasestorage.googleapis.com/v0/b/storage-30bbd.appspot.com/o/portfolio%2Fsunnybiolie_music%2FHome%20-%20Not%20logged.png?alt=media&token=b6eda0a4-b5fc-4e6b-8f1f-952cc6c350d5",

@@ -2,9 +2,9 @@
 
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
-import { TopHeading } from "../components/top-heading";
-import { TechItem } from "../components/tech-item";
-import { Overview } from "./components/overview";
+import { TopHeading } from "../_components/top-heading";
+import { TechItem } from "../_components/tech-item";
+import { Overview } from "./_components/overview";
 
 import { projectData } from "@/data/dataCloudyDrinks";
 
@@ -73,7 +73,7 @@ const CloudyDrinksPage = () => {
           {t("mdetails")}
         </h3>
         <div>
-          <h5 className="text-highlight mb-1">{t("info")}</h5>
+          <h5 className="text-[1.0625rem] text-highlight mb-1">{t("info")}</h5>
           <p>{t("information_l1")}</p>
           <p>{t("information_l2")}</p>
           <p>{t("information_l3")}</p>

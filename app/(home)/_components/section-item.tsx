@@ -17,7 +17,7 @@ export const SectionItem = ({
   return (
     <Link
       href={`/project/${href}`}
-      className="-my-3 -mx-4 py-3 px-4 rounded-md hover:bg-neutral-800/50 flex items-center justify-between"
+      className="-mx-4 py-3 px-4 rounded-md hover:bg-neutral-800/50 flex items-center justify-between"
     >
       <div className="basis-[70%] shrink">
         <p className="text-highlight">{title}</p>
@@ -25,7 +25,7 @@ export const SectionItem = ({
       </div>
       <div className="shrink-0 flex gap-x-4">
         {icons?.map((Icon, index) => (
-          <Icon key={index} className="w-7 h-7" />
+          <Icon key={index} className="w-6 h-6" />
         ))}
       </div>
     </Link>

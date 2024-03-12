@@ -4,7 +4,7 @@ import { ElementRef, useEffect, useRef } from "react";
 import Image from "next/image";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { TechItem } from "../../components/tech-item";
+import { TechItem } from "../../_components/tech-item";
 import { useTransformToCodeView } from "@/hooks/use-transform-to-code-view";
 import { images } from "@/assets/index";
 import { packageJSON } from "@/data/dataSBmusic";
@@ -20,7 +20,7 @@ export const Tech = () => {
   return (
     <section className="flex flex-col gap-y-2 mb-10">
       <h3 className="text-highlight underline text-xl font-medium">
-        What i used
+        What I Used
       </h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 px-5 sm:px-0">
         <TechItem title="Next 14" href="https://nextjs.org/">
@@ -35,7 +35,7 @@ export const Tech = () => {
         <TechItem title="Supabase" href="https://supabase.com/">
           <Image
             src={images.imgSupabaseLogo}
-            alt=""
+            alt="Supabase"
             className="w-full h-full object-cover"
           />
         </TechItem>
