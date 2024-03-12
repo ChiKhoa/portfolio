@@ -1,7 +1,7 @@
-import { Image } from "@/types";
+import { MyImage } from "@/types";
 import { useViewFullScreen } from "./use-view-full-screen";
 
-export const useOpenVFS = (images: Image[]) => {
+export const useOpenVFS = (images: MyImage[]) => {
   const viewFullScreen = useViewFullScreen();
 
   return () => {

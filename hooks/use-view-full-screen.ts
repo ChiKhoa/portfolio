@@ -1,14 +1,14 @@
-import { Image } from "@/types";
+import { MyImage } from "@/types";
 import { create } from "zustand";
 
 interface ViewFullScreenStore {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
-  currentImage: Image | null;
-  setCurrentImage: (image: Image) => void;
-  imageQueue: Image[];
-  setImageQueue: (images: Image[]) => void;
+  currentImage: MyImage | null;
+  setCurrentImage: (image: MyImage) => void;
+  imageQueue: MyImage[];
+  setImageQueue: (images: MyImage[]) => void;
 }
 
 export const useViewFullScreen = create<ViewFullScreenStore>((set) => ({
@@ -22,7 +22,7 @@ export const useViewFullScreen = create<ViewFullScreenStore>((set) => ({
     document.body.style.overflow = "auto";
   },
   currentImage: null,
-  setCurrentImage: (image: Image) => set({ currentImage: image }),
+  setCurrentImage: (image: MyImage) => set({ currentImage: image }),
   imageQueue: [],
-  setImageQueue: (images: Image[]) => set({ imageQueue: images }),
+  setImageQueue: (images: MyImage[]) => set({ imageQueue: images }),
 }));
