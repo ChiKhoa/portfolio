@@ -6,10 +6,13 @@ import { Todos } from "./_components/todos";
 
 import { projectData, images } from "@/data/dataSBmusic";
 import MoreDetails from "./_components/more-details";
+import { ProjectFooter } from "../_components/footer";
+import { ProjectHeader } from "../_components/header";
 
 const SBMusicPage = () => {
   return (
     <>
+      <ProjectHeader />
       <TopHeading type={projectData.type} title={projectData.title} />
       <Overview
         projectData={projectData}
@@ -20,6 +23,7 @@ const SBMusicPage = () => {
       <AboutApplication />
       <MoreDetails />
       <Todos />
+      <ProjectFooter />
     </>
   );
 };

@@ -6,10 +6,13 @@ import { Tech } from "./_components/tech";
 import MoreDetails from "./_components/more-details";
 import AboutApplication from "./_components/about-application";
 import { Todos } from "./_components/todos";
+import { ProjectFooter } from "../_components/footer";
+import { ProjectHeader } from "../_components/header";
 
 const ShareStoryPage = () => {
   return (
     <div>
+      <ProjectHeader />
       <TopHeading type={projectData.type} title={projectData.title} />
       <Overview
         projectData={projectData}
@@ -20,6 +23,7 @@ const ShareStoryPage = () => {
       <AboutApplication />
       <MoreDetails />
       <Todos />
+      <ProjectFooter />
     </div>
   );
 };

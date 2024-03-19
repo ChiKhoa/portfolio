@@ -20,6 +20,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { ProjectFooter } from "../_components/footer";
+import { ProjectHeader } from "../_components/header";
 
 const CloudyDrinksPage = () => {
   const [language, setLanguage] = useState<string>("");
@@ -33,6 +35,7 @@ const CloudyDrinksPage = () => {
 
   return (
     <>
+      <ProjectHeader />
       <div className="flex justify-end">
         <Select
           onValueChange={(value) => changeLanguage(value)}
@@ -83,6 +86,7 @@ const CloudyDrinksPage = () => {
           </p>
         </div>
       </section>
+      <ProjectFooter />
     </>
   );
 };

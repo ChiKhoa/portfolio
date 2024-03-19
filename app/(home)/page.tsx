@@ -1,4 +1,3 @@
-import { FaCss3, FaHtml5 } from "react-icons/fa";
 import {
   SiCss3,
   SiHtml5,
@@ -9,12 +8,6 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import {
-  TbBrandNextjs,
-  TbBrandSupabase,
-  TbBrandTailwind,
-  TbBrandTypescript,
-} from "react-icons/tb";
 import { Section } from "./_components/section";
 import { SectionItem } from "./_components/section-item";
 
