@@ -16,7 +16,7 @@ export const SectionItem = ({
 }: SectionItemProps) => {
   return (
     <Link
-      href={`/project/${href}`}
+      href={`${href}`}
       className="-mx-4 py-3 px-4 rounded-md hover:bg-neutral-800/50 flex items-center justify-between"
     >
       <div className="basis-[70%] shrink">
