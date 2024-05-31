@@ -16,14 +16,18 @@ interface OverviewProps {
   bgImage: string;
 }
 
-export const Overview = ({ projectData, images, bgImage }: OverviewProps) => {
+export const SectionOverview = ({
+  projectData,
+  images,
+  bgImage,
+}: OverviewProps) => {
   const openVFS = useOpenVFS(images);
 
   return (
     <section className="flex flex-col md:flex-row gap-10 mb-10">
-      <div className="relative basis-1/2 aspect-[3/2] overflow-hidden rounded-lg border-2 ">
+      <div className="relative basis-1/2 aspect-[3/2] overflow-hidden rounded-lg border-2">
         <div
-          className="group w-full h-full bg-cover cursor-pointer"
+          className="group relative w-full h-full bg-cover bg-center cursor-pointer"
           style={{ backgroundImage: `url('${bgImage}')` }}
           onClick={() => {
             openVFS();

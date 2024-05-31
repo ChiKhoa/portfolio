@@ -1,43 +1,26 @@
-import { Section } from "./_components/section";
-import { SectionItem } from "./_components/section-item";
-import { projectsData } from "@/data/dataProjects";
+import { Footer } from "@/components/home/footer";
+import { Header } from "@/components/home/header";
+import { SectionAbout } from "@/components/home/section-about";
+import { SectionContact } from "@/components/home/section-contact";
+import { SectionProjects } from "@/components/home/section-projects";
+import { SectionSkills } from "@/components/home/section-skills";
+import { SectionTop } from "@/components/home/section-top";
+import { ImQuotesLeft } from "react-icons/im";
 
-export default function Home() {
-  const personalProjects = projectsData.filter(
-    (project) => project.type === "Personal project"
-  );
-  const collabProjects = projectsData.filter(
-    (project) => project.type === "Collaboration project"
-  );
-
+const AboutMePage = () => {
   return (
-    <>
-      {personalProjects && (
-        <Section title="Personal projects">
-          {personalProjects.map((pro, index) => (
-            <SectionItem
-              key={index}
-              title={pro.title}
-              description={pro.description}
-              icons={pro.techIcons}
-              href={pro.href}
-            />
-          ))}
-        </Section>
-      )}
-      {collabProjects && (
-        <Section title="Collaboration projects">
-          {collabProjects.map((pro, index) => (
-            <SectionItem
-              key={index}
-              title={pro.title}
-              description={pro.description}
-              icons={pro.techIcons}
-              href={pro.href}
-            />
-          ))}
-        </Section>
-      )}
-    </>
+    <div className="w-[100vw-17px] h-screen scroll-smooth ">
+      <Header />
+      <SectionTop />
+      <div className="lg:max-w-4xl md:max-w-3xl w-[calc(100vw-17px)] min-h-screen px-4 m-auto">
+        <SectionAbout />
+        <SectionSkills />
+        <SectionProjects />
+        <SectionContact />
+        <Footer />
+      </div>
+    </div>
   );
-}
+};
+
+export default AboutMePage;

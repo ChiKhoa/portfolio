@@ -1,4 +1,4 @@
-const MoreDetails = () => {
+export const SectionMoreDetails = () => {
   return (
     <section className="flex flex-col gap-y-5 mb-10">
       <h3 className="text-highlight underline text-xl font-medium">
@@ -80,5 +80,3 @@ const MoreDetails = () => {
     </section>
   );
 };
-
-export default MoreDetails;

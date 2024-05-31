@@ -11,7 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-const AboutApplication = () => {
+export const SectionAboutApplication = () => {
   const [isOpenFormatType, setIsOpenFormatType] = useState<boolean>(false);
 
   return (
@@ -25,11 +25,12 @@ const AboutApplication = () => {
             Short description
           </h5>
           <p className="indent-4">
-            This is a small project that helps me try to experience some other
-            technologies like Remix or Thin Backend. In addition, I also learn
-            about working with cookies and know more deeply about React and even
-            some Javascript tasks that I have not work with before in previous
-            projects.
+            This is a small project that allows me to explore other technologies
+            like Remix. I also used Thin Backend, which worked great, but
+            something went wrong, so I had to port to Aiven.io and Prisma ORM.
+            In addition, I am learning about working with cookies and gaining a
+            deeper understanding of React and some JavaScript tasks that I had
+            not worked with in previous projects.
           </p>
           <p className="indent-4">
             You can write a blog, share your own story, present your ideas with
@@ -44,10 +45,10 @@ const AboutApplication = () => {
             Authentication
           </h5>
           <p className="indent-4">
-            The Thin backend has a product that supports authentication, but
-            since the goal of this web application is to allow people to not log
-            in and still use full functionality, creating a user is not
-            necessary. Instead, I will use cookies to determine article
+            The Thin Backend offers a product that supports authentication, but
+            since the goal of this web application is to allow people to use its
+            full functionality without logging in, creating a user account is
+            not necessary. Instead, I will use cookies to determine article
             ownership.
           </p>
           <p className="indent-4">{`A cookie will be created when you publish your post or when you leave the write page while writing but not publishing it.`}</p>
@@ -341,5 +342,3 @@ const AboutApplication = () => {
     </>
   );
 };
-
-export default AboutApplication;

@@ -6,7 +6,6 @@ import { MoreInfoModal } from "@/components/more-info-modal";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -15,7 +14,7 @@ import {
 import { images } from "@/assets/index";
 import { useOpenVFS } from "@/hooks/use-open-vfs";
 
-export const AboutApplication = () => {
+export const SectionAboutApplication = () => {
   const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
   const openVFS = useOpenVFS([
     { title: "Supabase Buckets", path: images.imgSupabaseBucket },
@@ -43,9 +42,12 @@ export const AboutApplication = () => {
         <h5 className="text-[1.0625rem] text-highlight mb-1">Authentication</h5>
         <p>
           Supabase is used to authenticate users who want to register or log in
-          to the web.
+          to the website.
         </p>
-        <p>Now people can sign up or log in with email or Google account.</p>
+        <p>
+          Now people can sign up or log in with email, Google and Github
+          account.
+        </p>
       </div>
       <div>
         <h5 className="text-[1.0625rem] text-highlight mb-1">Database</h5>

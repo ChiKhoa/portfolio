@@ -50,6 +50,7 @@ export const todos: Todo[] = [
 
 export const packageJSON = {
   dependencies: {
+    "@prisma/client": "^5.14.0",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-scroll-area": "^1.0.5",
@@ -68,15 +69,12 @@ export const packageJSON = {
     "remix-themes": "^1.3.1",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "thin-backend": "^0.12.1",
-    "thin-backend-react": "^0.10.1",
     zustand: "^4.5.1",
   },
   devDependencies: {
     "@remix-run/dev": "^2.7.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
-    "@types/thin-backend": "https://thin.dev/types/...",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     autoprefixer: "^10.4.17",
     eslint: "^8.38.0",
@@ -85,6 +83,7 @@ export const packageJSON = {
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    prisma: "^5.14.0",
     tailwindcss: "^3.4.1",
     typescript: "^5.1.6",
   },

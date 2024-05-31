@@ -9,7 +9,7 @@ import { images } from "@/assets/index";
 import { projectData } from "@/data/dataCloudyDrinks";
 import { useTranslation } from "react-i18next";
 
-export const Overview = () => {
+export const SectionOverview = () => {
   const [isPlay, setIsPlay] = useState<boolean>(false);
 
   const { t } = useTranslation("translation");

@@ -5,7 +5,7 @@ import { projectsData } from "@/data/dataProjects";
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 import Link from "next/link";
 
-export const ProjectFooter = () => {
+export const SectionFooter = () => {
   const pathname = usePathname();
 
   const currentIndex = projectsData.findIndex((item) => item.href === pathname);

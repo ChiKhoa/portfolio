@@ -1,8 +1,12 @@
 import Link from "next/link";
-import { TodosItem } from "../../_components/todos-item";
-import { todos } from "@/data/dataShareStory";
+import { TodosItem } from "./todos-item";
+import { Todo } from "@/types";
 
-export const Todos = () => {
+interface SectionTodosProps {
+  todos: Todo[];
+}
+
+export const SectionTodos = ({ todos }: SectionTodosProps) => {
   return (
     <section className="flex flex-col gap-y-4 mb-10">
       <h3 className="text-highlight underline text-xl font-medium">Todos</h3>
@@ -18,6 +22,17 @@ export const Todos = () => {
             dateDone={`(${todo.status})`}
           />
         ))}
+      </div>
+      <div>
+        Visit{" "}
+        <Link
+          href="https://share-story.vercel.app/published/aa99cf4f-0d10-469e-9d70-bf179f7357c0"
+          target="_blank"
+          className="text-highlight underline"
+        >
+          this
+        </Link>{" "}
+        to view all.
       </div>
     </section>
   );

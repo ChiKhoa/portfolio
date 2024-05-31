@@ -2,9 +2,7 @@
 
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from "react-icons/io5";
-import { TopHeading } from "../_components/top-heading";
-import { TechItem } from "../_components/tech-item";
-import { Overview } from "./_components/overview";
+import { SectionOverview } from "./_components/section-overview";
 
 import { projectData } from "@/data/dataCloudyDrinks";
 
@@ -20,8 +18,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { ProjectFooter } from "../_components/footer";
-import { ProjectHeader } from "../_components/header";
+import { SectionFooter } from "../../../components/project/section-footer";
+import { SectionTop } from "@/components/project/section-top";
+import { TechItem } from "@/components/project/tech-item";
 
 const CloudyDrinksPage = () => {
   const [language, setLanguage] = useState<string>("");
@@ -35,7 +34,6 @@ const CloudyDrinksPage = () => {
 
   return (
     <>
-      <ProjectHeader />
       <div className="flex justify-end">
         <Select
           onValueChange={(value) => changeLanguage(value)}
@@ -50,8 +48,8 @@ const CloudyDrinksPage = () => {
           </SelectContent>
         </Select>
       </div>
-      <TopHeading type={t("project_type")} title={projectData.title} />
-      <Overview />
+      <SectionTop type={t("project_type")} title={projectData.title} />
+      <SectionOverview />
       <section className="flex flex-col gap-y-2 mb-10">
         <h3 className="text-highlight underline text-xl font-medium">
           {t("wid")}
@@ -86,7 +84,7 @@ const CloudyDrinksPage = () => {
           </p>
         </div>
       </section>
-      <ProjectFooter />
+      <SectionFooter />
     </>
   );
 };

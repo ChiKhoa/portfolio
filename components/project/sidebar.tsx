@@ -1,12 +1,12 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { FaRegCopyright } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 import { IoCloseOutline } from "react-icons/io5";
-import { LiaCopyright } from "react-icons/lia";
+import { projectsData } from "@/data/dataProjects";
+import { LuCopyright } from "react-icons/lu";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -52,30 +52,28 @@ export const Sidebar = () => {
         <div className="h-full flex flex-col justify-between pt-28">
           <div className="flex flex-col items-center justify-center gap-y-5">
             <Link
-              href="/"
+              href={"/"}
               className="text-2xl hover:underline"
               onClick={toggleOpen}
             >
               Home
             </Link>
-            {/* <Link
-            href="/about-me"
-            className="text-2xl hover:underline"
-            onClick={toggleOpen}
-          >
-            About me
-          </Link> */}
-            <Link
-              href="/contact"
-              className="text-2xl hover:underline"
-              onClick={toggleOpen}
-            >
-              Contact
-            </Link>
+            <div className="w-3/4 h-[2px] bg-neutral-500"></div>
+            {projectsData.map((pro, index) => (
+              <Link
+                key={index}
+                href={pro.href}
+                className="text-2xl hover:underline"
+                onClick={toggleOpen}
+              >
+                {pro.title}
+              </Link>
+            ))}
           </div>
-          <div className="flex items-center justify-center m-4 gap-2 text-sm font-normal">
-            <LiaCopyright className="w-5 h-5" />
-            2024 - Sunny Biolie
+          <div className="flex items-center justify-center m-4 gap-2 text-sm font-medium">
+            <LuCopyright className="size-4" />
+            <span>2024</span>
+            <span>SunnyBiolie - Khoa Phạm</span>
           </div>
         </div>
       </div>
