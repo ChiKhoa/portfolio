@@ -1,24 +1,35 @@
 import { IconType } from "react-icons";
 import {
+  SiClerk,
   SiCss3,
   SiHtml5,
   SiJavascript,
   SiNextdotjs,
+  SiPrisma,
   SiRemix,
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 
-interface ProjectDataType {
+export interface ProjectDataType {
   type: "Personal project" | "Collaboration project";
   title: string;
   href: string;
   description: string;
   techIcons: IconType[];
+  more?: boolean;
 }
 
 export const projectsData: ProjectDataType[] = [
+  {
+    type: "Personal project",
+    title: "Photocial",
+    href: "/project/photocial",
+    description: "A social networking site for posting photos and more",
+    techIcons: [SiNextdotjs, SiTypescript, SiTailwindcss, SiClerk],
+    more: true,
+  },
   {
     type: "Personal project",
     title: "SBmusic",
@@ -31,7 +42,7 @@ export const projectsData: ProjectDataType[] = [
     title: "Share Story",
     href: "/project/share-story",
     description: "Write blog, share your story, no need an account",
-    techIcons: [SiRemix, SiTypescript, SiTailwindcss],
+    techIcons: [SiRemix, SiTypescript, SiTailwindcss, SiPrisma],
   },
   {
     type: "Collaboration project",

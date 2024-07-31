@@ -9,7 +9,7 @@ export const SectionSkills = () => {
       <div className="w-16 h-1 bg-[#b4b2ac] mt-6 lg:mx-auto" />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-10 pb-8">
         <SkillGroup
-          title="Languages"
+          title="Language"
           skills={["HTML5", "JavaScript", "TypeScript"]}
           links={[
             "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -18,7 +18,7 @@ export const SectionSkills = () => {
           ]}
         />
         <SkillGroup
-          title="Frameworks"
+          title="Framework"
           skills={["React", "Next.js", "Remix.run"]}
           links={[
             "https://react.dev/",
@@ -46,15 +46,21 @@ export const SectionSkills = () => {
           links={["https://supabase.com/", "https://thin.dev/"]}
         />
         <SkillGroup
+          title="Serverless Database"
+          skills={["Neon"]}
+          links={["https://neon.tech/"]}
+        />
+        <SkillGroup
           title="Version Control"
           skills={["Git"]}
           links={["https://git-scm.com/"]}
         />
         <SkillGroup
           title="Tools/Others"
-          skills={["Clerk", "shadcn/ui", "Figma"]}
+          skills={["Clerk", "ImageKit", "shadcn/ui", "Figma"]}
           links={[
             "https://clerk.com/",
+            "https://imagekit.io/",
             "https://ui.shadcn.com/",
             "https://www.figma.com/",
           ]}

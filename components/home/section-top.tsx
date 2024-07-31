@@ -42,6 +42,9 @@ export const SectionTop = () => {
               style={{
                 aspectRatio: slide.aspectRatio,
                 rotate: slide.rotateDeg,
+                backgroundImage: `url(${slide.imageXS})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
               }}
             ></Slide>
           ))}

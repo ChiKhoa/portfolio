@@ -67,7 +67,7 @@ export const Slide = ({
           src={slide.image}
           alt=""
           fill
-          sizes="auto"
+          sizes="1024px"
         />
         {index === slidesShow[0] && (
           <p className="absolute left-0 top-0 text-nowrap text-neutral-950 bg-neutral-200/50 px-1 rotate-[-6deg]">

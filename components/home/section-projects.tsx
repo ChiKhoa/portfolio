@@ -19,26 +19,14 @@ export const SectionProjects = () => {
       {personalProjects && (
         <ProjectGroup title="Pet projects">
           {personalProjects.map((pro, index) => (
-            <ProjectItem
-              key={index}
-              title={pro.title}
-              description={pro.description}
-              icons={pro.techIcons}
-              href={pro.href}
-            />
+            <ProjectItem key={index} projectData={pro} />
           ))}
         </ProjectGroup>
       )}
       {collabProjects && (
         <ProjectGroup title="Collaboration projects">
           {collabProjects.map((pro, index) => (
-            <ProjectItem
-              key={index}
-              title={pro.title}
-              description={pro.description}
-              icons={pro.techIcons}
-              href={pro.href}
-            />
+            <ProjectItem key={index} projectData={pro} />
           ))}
         </ProjectGroup>
       )}
